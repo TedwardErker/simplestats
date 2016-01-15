@@ -1,9 +1,16 @@
 def mean(vals):
     ''' calculate arithmetic mean of list'''
     assert type(vals) is list, "wrong input format"
-    total = sum(vals)
-    length = len(vals)
-    return total/length
+
+    if len(vals) == 0 :
+
+        return 0
+
+    else :
+
+        total = sum(vals)
+        length = len(vals)
+        return total/length
 
 
 # print(mean([2,4]))
@@ -13,8 +20,8 @@ def test_mean():
 
 test_mean()
 
-# def test_empty_list():
-#     assert mean([]) == 0.0
+def test_empty_list():
+    assert mean([]) == 0.0
 
-# test_empty_list()
+test_empty_list()
 
