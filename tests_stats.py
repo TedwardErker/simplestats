@@ -20,3 +20,5 @@ def test_mean_float():
 def test_mean_float2():
     assert_almost_equals(mean([.5,.5,1]), .666666666)
 
+def test_str_list_mean():
+    assert_equal(mean(['1','2','3']), 2.0)
