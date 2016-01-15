@@ -1,17 +1,22 @@
 from stats import mean
+from nose.tools import assert_equal
 
 
 def test_mean():
-      assert mean([2,4]) == 3.0
+      assert_equal(mean([2,4]), 3.0)
 
-test_mean()
+
 
 def test_empty_list():
-    assert mean([]) == 0.0
+    assert_equal(mean([]), 0.0)
 
-test_empty_list()
+
 
 def test_mean_float():
-    assert mean([3,4]) == 3.5
+    assert_equal(mean([3,4]), 3.5)
 
-test_mean_float()
+
+
+def test_mean_float2():
+    assert_equal(mean([.5,.5,1]), .666)
+
