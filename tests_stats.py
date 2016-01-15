@@ -11,3 +11,7 @@ def test_empty_list():
 
 test_empty_list()
 
+def test_mean_float():
+    assert mean([3,4]) == 3.5
+
+test_mean_float()

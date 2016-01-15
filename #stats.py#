@@ -1,0 +1,14 @@
+def mean(vals):
+    ''' calculate arithmetic mean of list'''
+    assert type(vals) is list, "wrong input format"
+
+    if len(vals) == 0 :
+
+        return 0
+
+    else :
+
+        total = sum(vals)
+        length = len(vals)
+        return total/length
+
